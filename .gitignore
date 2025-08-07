@@ -1,0 +1,14 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+
+# Ambiente Virtual
+venv/
+
+# Arquivos de Cache do Python
+__pycache__/
+*.pyc
+
+# Arquivos de Dados Gigantes (muito importante!)
+*.csv
+
+# Arquivos de Checkpoint do Jupyter
+.ipynb_checkpoints/
