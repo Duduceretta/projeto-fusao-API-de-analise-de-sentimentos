@@ -14,7 +14,7 @@ Este projeto faz parte da Fase 1 de um sistema completo de IA. O objetivo aqui f
 
 ## Como Executar o Projeto
 
-1. Clone este repositório: `git clone [URL_DO_SEU_REPO]`
+1. Clone este repositório: `git clone [https://github.com/Duduceretta/projeto-fusao-API-de-analise-de-sentimentos]`
 2. Navegue até a pasta do projeto: `cd projeto-fusao-ia`
 3. Crie e ative um ambiente virtual: `python -m venv venv` e `source venv/bin/activate` (ou `.\venv\Scripts\activate` no Windows).
 4. Instale as dependências: `pip install -r requirements.txt`
@@ -25,4 +25,5 @@ Este projeto faz parte da Fase 1 de um sistema completo de IA. O objetivo aqui f
 
 O modelo treinado (Regressão Logística com TF-IDF) alcançou os seguintes resultados no conjunto de teste:
 
-_(AQUI VOCÊ COLA UM PRINT DO SEU `classification_report`!)_
+<img width="804" height="323" alt="image" src="https://github.com/user-attachments/assets/85a9c807-96de-4873-9f6c-17e9000ddc10" />
+
