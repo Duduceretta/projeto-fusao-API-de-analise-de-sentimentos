@@ -23,7 +23,7 @@ Este projeto implementa um sistema de Inteligência Artificial de ponta a ponta,
 
 1.  **Clone este repositório:**
     ```bash
-    git clone [https://github.com/Duduceretta/projeto-fusao-API-de-analise-de-sentimentos.git](https://github.com/Duduceretta/projeto-fusao-API-de-analise-de-sentimentos.git)
+    git clone https://github.com/Duduceretta/projeto-fusao-API-de-analise-de-sentimentos.git
     ```
 2.  **Navegue até a pasta do projeto:**
     ```bash
