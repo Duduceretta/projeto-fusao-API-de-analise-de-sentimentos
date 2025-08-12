@@ -12,3 +12,6 @@ __pycache__/
 
 # Arquivos de Checkpoint do Jupyter
 .ipynb_checkpoints/
+
+# Arquivo de variáveis de ambiente
+.env
