@@ -27,7 +27,11 @@ def get_db():
         db.close()
 
 # Criando a instancia da aplicacao FastAPI.
-app = FastAPI()
+app = FastAPI(
+    title="API de Análise de Sentimentos",
+    version="1.0.0",
+    description="Uma API que utiliza um modelo de Machine Learning para classificar o sentimento de textos em português.",
+)
 
 # Carrega os arquivos de IA (modelo e vetorizador) na memoria.
 # Isso acontece UMA vez, quando a Api é iniciada (desempenho bom).

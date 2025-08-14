@@ -1,5 +1,5 @@
 # app/schemas.py
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from datetime import datetime
 
 # Contratos - Pdronizacao
@@ -24,5 +24,4 @@ class AnaliseResponse(BaseModel):
     confianca: float
     data_analise: datetime
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
