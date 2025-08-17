@@ -1,8 +1,9 @@
 # database.py
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, declarative_base
-from dotenv import load_dotenv
 import os
+
+from dotenv import load_dotenv
+from sqlalchemy import create_engine
+from sqlalchemy.orm import declarative_base, sessionmaker
 
 # Carrega as variaveis do arquivo .env
 load_dotenv()
@@ -20,3 +21,13 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # Classe base para os modelos de tabela
 Base = declarative_base()
+
+# Funcao de Referencia
+# Cria uma sessao com o banco de dados para cada requisicao e fecha ela no final
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+        

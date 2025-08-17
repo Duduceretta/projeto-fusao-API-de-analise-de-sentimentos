@@ -3,8 +3,9 @@
 # Ambiente Virtual
 venv/
 
-# Arquivos de Cache do Python
+# Arquivos de Cache do Python/Pytest
 __pycache__/
+.pytest_cache
 *.pyc
 
 # Arquivos de Dados Gigantes (muito importante!)

@@ -1,7 +1,9 @@
 # models.py
-from sqlalchemy import Column, Integer, String, Float, DateTime, text
+from sqlalchemy import Column, DateTime, Float, Integer, String, text
 from sqlalchemy.sql import func
+
 from .database import Base
+
 
 # Define a estrutura da tabela 'analises' no banco de dados
 class Analise(Base):

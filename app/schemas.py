@@ -1,6 +1,8 @@
 # app/schemas.py
-from pydantic import BaseModel, ConfigDict
 from datetime import datetime
+
+from pydantic import BaseModel, ConfigDict
+
 
 # Contratos - Pdronizacao
 # Definir o "contrato" de dados que a API espera receber no corpo do request.

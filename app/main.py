@@ -1,13 +1,14 @@
-# Criacao da api.
+# main.py
 
-# Import das ferramentas necessarias.
-import joblib
 import os
-from . import models, schemas
-from .database import SessionLocal, engine
-from sqlalchemy.orm import Session
-from fastapi import FastAPI, Depends
 from typing import List
+
+import joblib
+from fastapi import Depends, FastAPI
+from sqlalchemy.orm import Session
+
+from . import models, schemas
+from .database import get_db
 
 # Descobre o caminho absoluto para o diretório onde este arquivo (main.py) está
 DIRETORIO_ATUAL = os.path.dirname(os.path.abspath(__file__))
@@ -16,15 +17,6 @@ PASTA_RAIZ = os.path.dirname(DIRETORIO_ATUAL)
 # Constrói o caminho completo para os arquivos do modelo
 CAMINHO_MODELO = os.path.join(PASTA_RAIZ, 'modelo.joblib')
 CAMINHO_VETORIZADOR = os.path.join(PASTA_RAIZ, 'vetorizador.joblib')
-
-# Funcao de Referencia
-# Cria uma sessao com o banco de dados para cada requisicao e fecha ela no final
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
 
 # Criando a instancia da aplicacao FastAPI.
 app = FastAPI(
