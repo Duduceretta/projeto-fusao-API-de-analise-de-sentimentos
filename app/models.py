@@ -1,4 +1,5 @@
 # models.py
+
 from sqlalchemy import Column, DateTime, Float, Integer, String, text
 from sqlalchemy.sql import func
 
